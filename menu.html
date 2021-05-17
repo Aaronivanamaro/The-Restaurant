@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <div id="main" class="header-container">
+        <div id="logo-c" class="logo-container">
+            <ion-icon class="logo-icon" name="restaurant"></ion-icon>
+            <h2 class="logo-title">The Restaurant</h2>
+        </div>
+        <div id="responsive-menu" class="responsive-menu">
+            <ion-icon id="icon-menu" class="menu-icon" name="menu-outline"></ion-icon>
+        </div>
+        <nav>
+            <ul id="new-list-links">
+                <li><a id="new-link-1" class="link hover-link" href="/index.html">Inicio</a></li> <!--Página Principal(HOME) con recomendaciones de clientes-->
+                <li><a id="new-link-2" class="link hover-link" href="/about.html">Acerca De</a></li> <!--Historia con Fotos y demostraciones/ Agregar staff (cheff, ayudante, dueño)-->
+                <li><a id="new-link-3" class="link hover-link" href="/menu.html">Menú</a></liclass=> <!--Arma tu propio menu con reconocimiento de voz-->
+                <li><a id="new-link-4" class="link hover-link" href="/contact.html">Contacto</a></li> <!--Formulario de Contacto y Redes Sociales con TAG de geolocalización con Google Maps-->
+            </ul>
+        </nav>
+    </div>
+
+    <nav id="responsive-nav" class="nav-hidden">
+        <ul id="nav">
+            <li id="nav-link"><a id="a-1" class="link" href="/index.html">Inicio</a></li> 
+            <li id="nav-link"><a id="a-2" class="link" href="/about.html">Acerca De</a></li> 
+            <li id="nav-link"><a id="a-3" class="link" href="/menu.html">Menú</a></li> 
+            <li id="nav-link"><a id="a-4" class="link" href="/contact.html">Contacto</a></li> 
+        </ul>
+    </nav>
+
+    <div id="welcome" class="welcome" 
+    style="height: 60vh; justify-content: center;">
+        <h1 style="margin:0; padding: 0;">Menú</h1>
+        <div class="subtitle-container"><ion-icon name="remove-outline" class="line"></ion-icon><p class="date">The Restaurant</p><ion-icon name="remove-outline" class="line"></ion-icon></div>
+    </div>
+
+</header>
+
+<main>
+
+<section class="sep-gallery-bar">
+    <div class="food-gallery-top slide-effect bottom-side">
+        <div class="food-gt-img-1 food-img slide-effect right-side"></div>
+        <div class="food-gt-img-2 food-img slide-effect left-side"></div>
+        <div class="food-gt-img-3 food-img slide-effect right-side"></div>
+        <div class="food-gt-img-4 food-img slide-effect left-side"></div>
+        <div class="food-gt-img-5 food-img slide-effect right-side"></div>
+        <div class="food-gt-img-6 food-img slide-effect left-side"></div>
+        <div class="food-gt-img-7 food-img slide-effect right-side"></div>
+    </div>
+    <div class="food-gallery-bottom slide-effect top-side">
+        <div class="food-gb-img-1 food-img slide-effect right-side"></div>
+        <div class="food-gb-img-2 food-img slide-effect left-side"></div>
+        <div class="food-gb-img-3 food-img slide-effect right-side"></div>
+        <div class="food-gb-img-4 food-img slide-effect left-side"></div>
+        <div class="food-gb-img-5 food-img slide-effect right-side"></div>
+        <div class="food-gb-img-6 food-img slide-effect left-side"></div>
+    </div>
+</section>
+
+
+<section class="drinks-section">
+
+    <h2>Bebidas</h2>
+
+    <div class="drinks-c">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+
+                <div class="slide first">
+                    <div class="drink-img drink-1"></div>
+                    <h3 class="drink-name">Jugo de Naranja</h3>
+                </div>       
+                <div class="slide">
+                    <div class="drink-img drink-2"></div>
+                    <h3 class="drink-name">Jugo de Limón</h3>
+                </div>       
+                <div class="slide">
+                    <div class="drink-img drink-3"></div>
+                    <h3 class="drink-name">Agua</h3>
+                </div>       
+                <div class="slide">
+                    <div class="drink-img drink-4"></div>
+                    <h3 class="drink-name">Gaseosa</h3>
+                </div>       
+                <div class="slide">
+                    <div class="drink-img drink-5"></div>
+                    <h3 class="drink-name">Cerveza</h3>
+                </div>       
+                <div class="slide">
+                    <div class="drink-img drink-6"></div>
+                    <h3 class="drink-name">Vino</h3>
+                </div>       
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                </div>
+            
+            </div>
+            
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </div
+
+</section>
+
+<section class="menu-section">
+
+    <h2>Menú</h2>
+
+    <div class="modal modal-pizza">
+        <div class="modal-header">
+          <h2 class="modal-title">nuestras pizzas...</h2>
+          <button class="close-button close-pizza-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="extensive-menu-slider">
+                <figure>
+                    <img src="/images/pizza-2.jpg">
+                    <img src="/images/pizza-1.jpg">
+                    <img src="/images/pizza-3.jpg">
+                    <img src="/images/pizza-5.jpg">
+                    <img src="/images/pizza-2.jpg">
+                </figure>
+            </div>        
+        </div>
+    </div>
+
+    <div class="modal modal-postre">
+        <div class="modal-header">
+          <h2 class="modal-title">nuestros postres...</h2>
+          <button class="close-button close-postre-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="extensive-menu-slider">
+                <figure>
+                    <img src="/images/copaHelado.jpg">
+                    <img src="/images/heladoEnPlato.jpg">
+                    <img src="/images/copaHelado.jpg">
+                    <img src="/images/postre-1.jpg">
+                    <img src="/images/copaHelado.jpg">
+                </figure>
+            </div>        
+        </div>
+    </div>
+
+    <div class="modal modal-fast-food">
+        <div class="modal-header">
+          <h2 class="modal-title">nuestra comida rápida...</h2>
+          <button class="close-button close-fast-food-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="extensive-menu-slider">
+                <figure>
+                    <img src="/images/burger-potatoes.jpg">
+                    <img src="/images/hamburger-1.jpg">
+                    <img src="/images/hamburger-2.jpg">
+                    <img src="/images/hamburger-3.jpg">
+                    <img src="/images/burger-potatoes.jpg">
+                </figure>
+            </div>        
+        </div>
+    </div>
+
+    <div class="modal modal-pasta">
+        <div class="modal-header">
+          <h2 class="modal-title">nuestras pastas...</h2>
+          <button class="close-button close-pasta-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="extensive-menu-slider">
+                <figure>
+                    <img src="/images/pasta.jpg">
+                    <img src="/images/spaghetti.jpg">
+                    <img src="/images/pasta.jpg">
+                    <img src="/images/spaghetti1.jpg">
+                    <img src="/images/pasta.jpg">
+                </figure>
+            </div>        
+        </div>
+    </div>
+
+    <div class="modal modal-varios">
+        <div class="modal-header">
+          <h2 class="modal-title">nuestras comidas varias...</h2>
+          <button class="close-button close-varios-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="extensive-menu-slider">
+                <figure>
+                    <img src="/images/waffle.jpg">
+                    <img src="/images/cafeConLeche.jpg">
+                    <img src="/images/facturas.jpg">
+                    <img src="/images/hamburger-2.jpg">
+                    <img src="/images/waffle.jpg">
+                </figure>
+            </div>        
+        </div>
+    </div>
+
+    <div class="modal modal-meat">
+        <div class="modal-header">
+          <h2 class="modal-title">nuestras carnes...</h2>
+          <button class="close-button close-meat-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="extensive-menu-slider">
+                <figure>
+                    <img src="/images/carneAsada.jpg">
+                    <img src="/images/carne-variada.jpg">
+                    <img src="/images/salmon.jpg">
+                    <img src="/images/salmonCocido.jpg">
+                    <img src="/images/carneAsada.jpg">
+                </figure>
+            </div>        
+        </div>
+    </div>
+
+    <div class="dark-bgr"></div>
+
+    <div class="menu-c">
+
+        <div class="menu-option menu-option-1">
+            <div class="menu-img-1 menu-img"></div>
+            <div class="menu-option-des-c">
+                <h3>Pizza</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="menu-option-btn open-pizza-btn"><p>Ver más</p></div>
+            </div>
+        </div>
+
+        <div class="menu-option menu-option-2">
+            <div class="menu-img-2 menu-img"></div>
+            <div class="menu-option-des-c">
+                <h3>Postres</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="menu-option-btn open-postres-btn"><p>Ver más</p></div>
+            </div>
+        </div>
+
+        <div class="menu-option menu-option-3">
+            <div class="menu-img-3 menu-img"></div>
+            <div class="menu-option-des-c">
+                <h3>Fast-Food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="menu-option-btn open-fast-food-btn"><p>Ver más</p></div>
+            </div>
+        </div>
+
+        <div class="menu-option menu-option-4">
+            <div class="menu-img-4 menu-img"></div>
+            <div class="menu-option-des-c">
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="menu-option-btn open-pasta-btn"><p>Ver más</p></div>
+            </div>
+        </div>
+
+        <div class="menu-option menu-option-5">
+            <div class="menu-img-5 menu-img"></div>
+            <div class="menu-option-des-c">
+                <h3>Varios</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="menu-option-btn open-varios-btn"><p>Ver más</p></div>
+            </div>
+        </div>
+
+        <div class="menu-option menu-option-6">
+            <div class="menu-img-6 menu-img"></div>
+            <div class="menu-option-des-c">
+                <h3>Carnes</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="menu-option-btn open-meat-btn"><p>Ver más</p></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="order-now">
+
+    <a class="order-now-btn" href="/orderNow.html">
+        <h2 class="order-title">order now</h2>
+    </a>
+    
+</section>
+
+</main>
+    
+<footer>
+    <div class="brief-menu">
+        <div class="same column-1">
+            <h3>Acerca De</h3>
+            <p class="about-p">Lorem ipsum, dolor sit amet consetur adipisicing elit. Ratione odit maxime obcaecati.</p>
+            <div class="logo-container-modified">
+                <ion-icon class="i-modified" name="restaurant"></ion-icon>
+                <h2 class="t-modified">The Restaurant</h2>
+            </div>    
+        </div>
+        <div class="same column-2">
+            <h3>Horarios</h3>
+            <div class="timetable">
+                <div class="days">
+                    <p>Lunes</p>
+                    <p>Martes</p>
+                    <p>Miércoles</p>
+                    <p>Jueves</p>
+                    <p>Viernes</p>
+                    <p>Sábado</p>
+                    <p>Domingo</p>
+                </div>
+                <div class="hours">
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 02:00</p>
+                    <p>9:00 - 02:00</p>
+                    <p>9:00 - 02:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="same column-3">
+            <h3>Contacto</h3>
+            <p class="e-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, facilis.</p>
+            <div class="input-c">
+                <input type="email" placeholder="Ingrese su e-mail" name="email" id="email">
+                <button type="submit" id="suscribe-btn">Suscribirme</button>
+            </div>
+        </div>
+        <div class="same column-4">
+            <h3>Servicios</h3>
+            <div class="ser-c">
+                <div class="ser-name-c">
+                    <p class="ser-p">Pizza</p>
+                    <p class="ser-p">Pescado</p>
+                    <p class="ser-p">Cómida Rápida</p>
+                    <p class="ser-p">Cerveza</p>
+                    <p class="ser-p">Vino</p>
+                    <p class="ser-p">Wi-Fi</p>
+                    <p class="ser-p">Conexión Eléctrica</p>
+                </div>
+                <div class="icon-c">
+                    <ion-icon name="pizza-outline"></ion-icon>
+                    <ion-icon name="fish-outline"></ion-icon>
+                    <ion-icon name="fast-food-outline"></ion-icon>
+                    <ion-icon name="beer-outline"></ion-icon>
+                    <ion-icon name="wine-outline"></ion-icon>
+                    <ion-icon name="wifi-outline"></ion-icon>
+                    <ion-icon name="battery-charging-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sep-bar"></div>
+
+    <div class="copyright-c">
+        <p>Copyright ©2021 All rights reserved | by Aaron Ivan Amaro</p>
+    </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/menu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+<script src="/js/script.js" defer></script>
+
+</body>
+</html>

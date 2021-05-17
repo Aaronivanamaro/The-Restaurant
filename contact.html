@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <div id="main" class="header-container">
+        <div id="logo-c" class="logo-container">
+            <ion-icon class="logo-icon" name="restaurant"></ion-icon>
+            <h2 class="logo-title">The Restaurant</h2>
+        </div>
+        <div id="responsive-menu" class="responsive-menu">
+            <ion-icon id="icon-menu" class="menu-icon" name="menu-outline"></ion-icon>
+        </div>
+        <nav>
+            <ul id="new-list-links">
+                <li><a id="new-link-1" class="link hover-link" href="/index.html">Inicio</a></li> <!--Página Principal(HOME) con recomendaciones de clientes-->
+                <li><a id="new-link-2" class="link hover-link" href="/about.html">Acerca De</a></li> <!--Historia con Fotos y demostraciones/ Agregar staff (cheff, ayudante, dueño)-->
+                <li><a id="new-link-3" class="link hover-link" href="/menu.html">Menú</a></liclass=> <!--Arma tu propio menu con reconocimiento de voz-->
+                <li><a id="new-link-4" class="link hover-link" href="/contact.html">Contacto</a></li> <!--Formulario de Contacto y Redes Sociales con TAG de geolocalización con Google Maps-->
+            </ul>
+        </nav>
+    </div>
+
+    <nav id="responsive-nav" class="nav-hidden">
+        <ul id="nav">
+            <li id="nav-link"><a id="a-1" class="link" href="/index.html">Inicio</a></li> 
+            <li id="nav-link"><a id="a-2" class="link" href="/about.html">Acerca De</a></li> 
+            <li id="nav-link"><a id="a-3" class="link" href="/menu.html">Menú</a></li> 
+            <li id="nav-link"><a id="a-4" class="link" href="/contact.html">Contacto</a></li> 
+        </ul>
+    </nav>
+
+    <div id="welcome" class="welcome" 
+    style="height: 60vh; justify-content: center;">
+        <h1 style="margin:0; padding: 0;">Contacto</h1>
+        <div class="subtitle-container"><ion-icon name="remove-outline" class="line"></ion-icon><p class="date">The Restaurant</p><ion-icon name="remove-outline" class="line"></ion-icon></div>
+    </div>
+
+</header>
+
+<main>
+    
+    <div class="contact-c">
+        <div id="map" class="right-side slide-effect slide-remove-right"></div>
+        <div class="contact-form left-side slide-effect slide-remove-left">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" class="form-style" placeholder="Your Name" required>
+                <input type="text" class="form-style" placeholder="Your Email" required>
+                <input type="text" class="form-style" placeholder="Subject" required>
+                <input type="text" class="text-area form-style" placeholder="Message" required></input>
+                <button type="submit" class="form-style btn-style">Submit</button>
+            </form>
+        </div>    
+    </div>
+
+</main>
+    
+<footer>
+    <div class="brief-menu">
+        <div class="same column-1">
+            <h3>Acerca De</h3>
+            <p class="about-p">Lorem ipsum, dolor sit amet consetur adipisicing elit. Ratione odit maxime obcaecati.</p>
+            <div class="logo-container-modified">
+                <ion-icon class="i-modified" name="restaurant"></ion-icon>
+                <h2 class="t-modified">The Restaurant</h2>
+            </div>    
+        </div>
+        <div class="same column-2">
+            <h3>Horarios</h3>
+            <div class="timetable">
+                <div class="days">
+                    <p>Lunes</p>
+                    <p>Martes</p>
+                    <p>Miércoles</p>
+                    <p>Jueves</p>
+                    <p>Viernes</p>
+                    <p>Sábado</p>
+                    <p>Domingo</p>
+                </div>
+                <div class="hours">
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 24:00</p>
+                    <p>9:00 - 02:00</p>
+                    <p>9:00 - 02:00</p>
+                    <p>9:00 - 02:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="same column-3">
+            <h3>Contacto</h3>
+            <p class="e-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, facilis.</p>
+            <div class="input-c">
+                <input type="email" placeholder="Ingrese su e-mail" name="email" id="email">
+                <button type="submit" id="suscribe-btn">Suscribirme</button>
+            </div>
+        </div>
+        <div class="same column-4">
+            <h3>Servicios</h3>
+            <div class="ser-c">
+                <div class="ser-name-c">
+                    <p class="ser-p">Pizza</p>
+                    <p class="ser-p">Pescado</p>
+                    <p class="ser-p">Cómida Rápida</p>
+                    <p class="ser-p">Cerveza</p>
+                    <p class="ser-p">Vino</p>
+                    <p class="ser-p">Wi-Fi</p>
+                    <p class="ser-p">Conexión Eléctrica</p>
+                </div>
+                <div class="icon-c">
+                    <ion-icon name="pizza-outline"></ion-icon>
+                    <ion-icon name="fish-outline"></ion-icon>
+                    <ion-icon name="fast-food-outline"></ion-icon>
+                    <ion-icon name="beer-outline"></ion-icon>
+                    <ion-icon name="wine-outline"></ion-icon>
+                    <ion-icon name="wifi-outline"></ion-icon>
+                    <ion-icon name="battery-charging-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sep-bar"></div>
+
+    <div class="copyright-c">
+        <p>Copyright ©2021 All rights reserved | by Aaron Ivan Amaro</p>
+    </div>
+</footer>
+
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOy6xOdWRnBpHEwCX8puyTxnFgXeIL1FE&callback=initMap&libraries=&v=weekly"
+    async></script>
+<script src="/js/contact.js"></script>
+<script src="/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+<script src="/js/script.js" defer></script>
+
+</body>
+</html>

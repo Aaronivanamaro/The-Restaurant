@@ -1,0 +1,473 @@
+:root {
+
+--clr-white:white;
+--clr-white-dark:rgba(245,245,245,0.8);
+--clr-light:rgba(255,242,182,0.918);
+--clr-lighter:rgba(255, 250, 226, 0.23);
+--clr-yellow-dark:rgba(231,199,58,0.664);
+--clr-black:#0a0a0a;
+--clr-black-light:#0a0a0ae5;
+--clr-black-lighter:#181717c0;
+--clr-dark-yelowish:#25241e;
+
+}
+
+.logo-title {margin-top:4.7rem;}
+
+/*----------SEP-GALLERY-BAR----------*/
+.sep-gallery-bar {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+}
+.food-gallery-top,.food-gallery-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.food-img {width:16.6666666667%; height: 150px; 
+           background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.food-gt-img-1 {background-image: url(/images/cafeConLeche.jpg); 
+                width:8.3333333334%; background-position: right;}
+.food-gt-img-2 {background-image: url(/images/copaHelado.jpg);}
+.food-gt-img-3 {background-image: url(/images/desayuno-1.jpg);}
+.food-gt-img-4 {background-image: url(/images/desayuno-2.jpg);}
+.food-gt-img-5 {background-image: url(/images/desayuno-sano.jpg);}
+.food-gt-img-6 {background-image: url(/images/facturas.jpg);}
+.food-gt-img-7 {background-image: url(/images/postre-1.jpg); width:8.3333333334%;}
+
+.food-gb-img-1 {background-image: url(/images/pizza-6.jpg);}
+.food-gb-img-2 {background-image: url(/images/pizza-2.jpg);}
+.food-gb-img-3 {background-image: url(/images/pizza-3.jpg);}
+.food-gb-img-4 {background-image: url(/images/pizza-4.jpg);}
+.food-gb-img-5 {background-image: url(/images/pizza-1.jpg);}
+.food-gb-img-6 {background-image: url(/images/pizza-5.jpg);}
+
+/*---------DRINKS----------*/
+
+.drinks-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {margin:4.35rem 0; text-align: center;}
+.drinks-c {
+    display: flex;
+    align-items: center;
+    margin:1.35rem 0;
+    margin-bottom:4rem;
+}
+.drink-img {
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width:295px;
+    height:350px;
+}
+.drink-1 {background-image: url(/menu/jugo-1.png);}
+.drink-2 {background-image: url(/menu/jugo-2.png);}
+.drink-3 {background-image: url(/menu/water.png); width:240px; margin-left:24px;}
+.drink-4 {background-image: url(/menu/coke.png); width:225px; margin-left:30px;}
+.drink-5 {background-image: url(/menu/beer.png);}
+.drink-6 {background-image: url(/menu/wine.png); width:173px; margin-left:55px;}
+.drink-name {
+    color:rgb(230, 205, 95);
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 0 2px var(--clr-white-dark);
+}
+.slider {
+    width: 295px;
+    height: 500px;
+    overflow: hidden;
+}
+.slides {
+    width: 500%;
+    height: 500px; 
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.navigation-manual {
+    position: absolute;
+    width: 295px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    background-color: var(--clr-lighter);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover {
+    background: rgb(230, 205, 95);
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 295px;
+    justify-content: center;
+    margin-top: 470px;
+}
+.navigation-auto div {
+    background-color:var(--clr-lighter);
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: rgb(230, 205, 95);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: rgb(230, 205, 95);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: rgb(230, 205, 95);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: rgb(230, 205, 95);
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: rgb(230, 205, 95);
+}
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background: rgb(230, 205, 95);
+}
+
+/*---------MENU----------*/
+
+.menu-section {padding-bottom:6.5rem;}
+.menu-c {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-option {width:33.33%; 
+              display: flex; flex-wrap: wrap;}
+.menu-option-1:hover,
+.menu-option-1:focus {background-color: rgba(235, 171, 69, 0.5);}
+.menu-option-2:hover,
+.menu-option-2:focus {background-color: rgba(223, 165, 174, 0.5);}
+.menu-option-3:hover,
+.menu-option-3:focus {background-color: rgba(230, 88, 88, 0.5);}
+.menu-option-4:hover,
+.menu-option-4:focus {background-color: rgba(255, 255, 93, 0.5);}
+.menu-option-5:hover,
+.menu-option-5:focus {background-color: rgba(191, 236, 122, 0.5);}
+.menu-option-6:hover,
+.menu-option-6:focus {background-color: rgba(173, 135, 90, 0.5);} 
+
+.menu-img {
+    width:50%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-img-1 {background-image: url(/images/pizza-1.jpg);}
+.menu-img-2 {background-image: url(/images/postre-1.jpg);}
+.menu-img-3 {background-image: url(/images/burger-potatoes.jpg);}
+.menu-img-4 {background-image: url(/images/spaghetti.jpg);}
+.menu-img-5 {background-image: url(/images/desayuno-sano.jpg);}
+.menu-img-6 {background-image: url(/images/salmonCocido.jpg);}
+ 
+.menu-option-des-c {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    padding:1rem;
+    padding-left: 2rem;
+}
+h3 {margin:0; color: var(--clr-light);}
+
+.menu-option-btn {
+    text-align: center;
+    border: solid 1px var(--clr-light);
+    width:70%;
+    padding:0.5rem 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menu-option-btn p {
+    margin:0; 
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 1.1rem;
+    color:var(--clr-light);
+}
+.menu-option-btn:hover,
+.menu-option-btn:focus {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*-----------OPEN-MENU------------*/
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid var(--clr-black);
+    z-index:30;
+    width:720px;
+    height:530px;
+    box-shadow: 0 0 10px 1px var(--clr-lighter);
+}
+.modal-active {transform: translate(-50%, -50%) scale(1);}
+ 
+.modal-pizza {background-color: rgb(207, 152, 63);}
+.modal-postre {background-color: rgb(206, 150, 159);}
+.modal-fast-food {background-color: rgb(206, 89, 89);}
+.modal-pasta {background-color: rgb(230, 227, 108);}
+.modal-varios {background-color: rgb(169, 204, 115);}
+.modal-meat {background-color: rgb(165, 134, 96);}
+
+.modal-header {
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--clr-black);
+    background-color: var(--clr-dark-yelowish);
+}
+.modal-header .modal-title {
+    font-weight: 600;
+    margin:0;
+}  
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:var(--clr-light);
+}
+.modal-body {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dark-bgr {
+    position: fixed;
+    opacity:0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    pointer-events: none;
+    z-index: 20;
+}
+.dark-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#extensive-menu-slider {
+	overflow: hidden;
+    width:670px;
+}
+#extensive-menu-slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 15s slider infinite;
+    box-shadow: 0 0 3px var(--clr-dark-yelowish);
+}
+#extensive-menu-slider figure img {
+	width: 20%;
+	float: left;
+    height:420px;
+    padding-top:20px;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+/*-----------ORDER NOW------------*/
+
+.order-now {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:5rem;
+    padding-top: 2rem;
+}
+.order-now-btn {
+    background-color: var(--clr-black);
+    border-style: none;
+    border: dotted rgb(230, 205, 95) 3px;
+    width: 350px;
+    height: 140px;
+    box-shadow: 0 0 5px var(--clr-light);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-now-btn:hover,
+.order-now-btn:focus {background-color:#b3a2441a;}
+
+/*---------MEDIA QUERIES----------*/
+
+@media (max-width:1215px) {
+    .food-img {height: 135px;}
+    .menu-option {width:50%;}
+}
+@media (max-width:970px) {
+    .modal {
+        width:620px;
+        height:450px;
+    }
+    #extensive-menu-slider {
+        width:570px;
+    }
+    #extensive-menu-slider figure img {
+        height:350px;
+        padding-top:15px;
+    }            
+}
+@media (max-width:810px) {
+    .food-img {height: 105px;}
+    .menu-option {width:80%;}
+    .modal {
+        width:560px;
+        height:390px;
+    }
+    #extensive-menu-slider {
+        width:510px;
+    }
+    #extensive-menu-slider figure img {
+        height:290px;
+    }            
+}
+@media (max-width:749px) {
+    .column-1 {margin-bottom: 3rem;}
+}
+@media (max-width:630px) {
+    .modal {
+        width:75%;
+        height:350px;
+    }
+    #extensive-menu-slider {
+        width:90%;
+    }
+    #extensive-menu-slider figure img {
+        height:250px;
+    }            
+}
+@media (max-width:589px) {
+    .modal {
+        height:400px;
+    }
+}
+@media (max-width:540px) {
+    .food-img {height: 75px;}
+    .menu-option {width:100%;}
+    .menu-option-btn p {
+        font-size: 1rem;
+    }
+}
+@media (max-width:520px) {
+    .modal {
+        width:85%;
+        height:350px;
+    }
+    #extensive-menu-slider figure img {
+        height:210px;
+    }            
+}
+@media (max-width:520px) {
+    .modal {
+        height:310px;
+    }
+}
+@media (max-width:470px) {
+    .modal {
+        height:350px;
+    }
+}
+@media (max-width:410px) {
+    .food-img {height: 50px;}
+    .menu-img, .menu-option-des-c {
+        width:100%;
+    }
+    .menu-img {height:250px;}
+    .menu-option-des-c {
+        align-items: center;
+        margin:2rem 0;
+    }
+    .menu-option-btn {width:35%;}
+    .order-now-btn {width:80%;}
+}

@@ -1,0 +1,153 @@
+:root {
+
+/*----------COLORS----------*/
+--clr-white:white;
+--clr-white-dark:rgba(245,245,245,0.8);
+--clr-light:rgba(255,242,182,0.918);
+--clr-yellow-dark:rgba(231,199,58,0.664);
+--clr-black:#0a0a0a;
+--clr-black-light:#0a0a0ae5;
+--clr-black-lighter:#181717c0;
+--clr-dark-yelowish:#25241e;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--------STAFF SECTION----------*/
+.staff-section {
+    max-width:1000px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:5rem;
+    margin-top:2rem;
+    width:1000px
+}
+.staff-title {margin:0 1rem; margin-top:5rem; text-align: center;}
+.chef-c {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.chef-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:280px;
+    height: 420px;
+    border-radius: 20px;
+    background-color:var(--clr-dark-yelowish);
+    box-shadow: 0 0 6.5px rgba(255,242,182,0.918);
+}
+.chef-1 {background-image: url(/menu/chef-2.png);}
+.chef-2 {background-image: url(/menu/chef-1.png);}
+.chef-3 {background-image: url(/menu/chef-3.png);}
+.chef-name {text-align: center; color: var(--clr-light); margin-bottom:1rem;}
+.chef-description {margin-top:0;}
+
+/*--------HISTORY SECTION----------*/
+.style-clr-dark {background-color: var(--clr-light); width:100%;}
+.history-section {
+    max-width: 1000px;
+    padding: 3.5rem 0;
+}
+.section-two {padding-top:0; padding-bottom: 5rem;}
+.dark-title {color:var(--clr-black);}
+.history-section p {color:var(--clr-dark-yelowish);font-size: 1.4rem; text-align: justify;}
+.all-imgs {
+    width:480px;
+    height:340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0.5rem 2rem;
+}
+.img-one {
+    background-image: url(/menu/old-days-5.jpg); float: left; margin-left:0;}
+.img-two {
+    background-image: url(/menu/old-days-4.jpg); float: right; margin-right:0;}
+.img-three {
+    background-image: url(/menu/old-days-2.jpg); float: left; margin-left:0;}
+.img-four {
+    background-image: url(/menu/old-days-1.jpg); float: right; margin-right:0;}
+.img-five {
+    background-image: url(/menu/old-days-3.jpg); float: left; margin-left:0;}
+
+/*--------------MEDIA QUERIES------------*/
+
+@media (max-width:1000px) {
+    .staff-section {
+        width:auto;
+        justify-content: space-around;
+    }
+    .chef-c {
+        flex:auto;
+        padding:0 2rem;
+    }
+}
+
+@media (max-width:1070px) {
+    .history-section p {margin:0 2rem;}
+    .history-section h2 {margin-left:2rem;}
+    .img-one {margin-left:2rem;}
+    .img-two {margin-right:2rem;}
+    .img-three {margin-left:2rem;}
+    .img-four {margin-right:2rem;}
+    .img-five {margin-left:2rem;}   
+}
+
+@media (max-width:770px) {
+    .all-imgs {
+        width:400px;
+        height:300px;    
+    }
+}
+
+@media (max-width:670px) {
+    .all-imgs {
+        width:500px;
+        height:380px;  
+        margin:1.5rem 0;  
+    }
+    .history-section {
+        display:flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .history-section p {margin:0 3rem;}
+    .img-one {
+        float: none; margin-left:0;}
+    .img-two {
+        float: none; margin-right:0;}
+    .img-three {
+        float: none; margin-left:0;}
+    .img-four {
+        float: none; margin-right:0;}
+    .img-five {
+        float: none; margin-left:0;}
+}
+
+@media (max-width:600px) {
+    .all-imgs {
+        width:400px;
+        height:300px;  
+    }
+}
+
+@media (max-width:500px) {
+    .all-imgs {
+        width:300px;
+        height:200px;  
+    }
+    .history-section p {margin:0 2rem; font-size: 1.1rem;}
+}
